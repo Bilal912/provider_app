@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Register"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/linear"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            />
+        <TextView
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Step"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+
+            <EditText
+                android:inputType="text"
+                android:fontFamily="@font/gotham"
+                android:hint="Instagram"
+                android:id="@+id/instagram"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:background="@drawable/edit_border"
+                />
+            <EditText
+                android:inputType="text"
+                android:fontFamily="@font/gotham"
+                android:hint="Twitter"
+                android:id="@+id/twitter"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:background="@drawable/edit_border"
+                />
+
+
+            <com.skydoves.elasticviews.ElasticButton
+                app:button_duration="250"
+                app:button_scale="0.87"
+                app:button_cornerRadius="5dp"
+                android:textStyle="bold"
+                android:id="@+id/last_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Register"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:fontFamily="@font/gotham"
+                />
+</LinearLayout>

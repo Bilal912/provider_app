@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#fea984</color>
+    <color name="colory">#fff6f1</color>
+    <color name="nav_header">#ffe5d6</color>
+    <color name="colorPrimaryDark">#fea984</color>
+    <color name="colorAccent">#1496EE</color>
+    <color name="pink">#ffc0cb</color>
+    <color name="black">#000000</color>
+    <color name="grey">#B8B8B8</color>
+    <color name="pricecolor">#feb1b8</color>
+    <color name="Red">#FC0530</color>
+    <color name="grey_800">#424242</color>
+    <color name="white">#ffffff</color>
+
+</resources>

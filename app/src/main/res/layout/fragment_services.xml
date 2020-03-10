@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="com.example.bus_reservation.services">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recylcer_id"
+        android:layout_marginBottom="50dp"
+        />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:id="@+id/no_file_id"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/no_file"
+        />
+
+    <com.skydoves.elasticviews.ElasticButton
+        app:button_duration="250"
+        app:button_scale="0.87"
+        android:textStyle="bold"
+        android:id="@+id/add_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="Add Your Services"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/gotham"
+        android:layout_alignParentBottom="true"
+        />
+    </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</FrameLayout>

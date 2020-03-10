@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+
+        vectorDrawables.useSupportLibrary = true
+        applicationId "com.example.bus_reservation"
+        minSdkVersion 17
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.android.support:appcompat-v7:29.0.0'
+    implementation 'com.android.support:design:29.0.0'
+
+    //volley
+    implementation 'com.google.code.gson:gson:2.4'
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+
+    //slider
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+
+    //images
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'com.github.f0ris.sweetalert:library:1.5.1'
+    implementation "com.github.skydoves:elasticviews:2.0.7"
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    //country picker
+    implementation 'com.github.yesterselga:country-picker-android:1.0'
+
+    //loading
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    //zoom in image
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    //pull refreash
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+
+    //Toast
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+
+}
