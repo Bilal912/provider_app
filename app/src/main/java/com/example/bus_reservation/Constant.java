@@ -12,6 +12,8 @@ public class Constant {
 
     public static final String Base_url_booking_view=Base_url+"?view_booking=true&booking_id=";
 
+    public static final String booking_image_url="http://marketist.eparking.website/uploads/booking/";
+
     public static final String Default_membership="http://marketist.eparking.website/Freelancer/Api.php?payments_settings=true";
 
     public static final String Base_url_delete_gallery = Base_url+"?remove_gallery=true&image_id=";

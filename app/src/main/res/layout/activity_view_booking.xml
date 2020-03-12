@@ -52,15 +52,16 @@
         android:text="Client Name and Image :"
         android:textStyle="bold"
         />
-
     <ImageView
+        android:contentDescription="Client Image"
         android:id="@+id/client_image"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:background="@drawable/no_file"
         android:layout_gravity="center"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
         />
+
         <TextView
             android:textColor="@color/black"
         android:id="@+id/client_name"

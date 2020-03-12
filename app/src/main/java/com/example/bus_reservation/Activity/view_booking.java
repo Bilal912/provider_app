@@ -3,6 +3,7 @@ package com.example.bus_reservation.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -16,6 +17,7 @@ import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.bumptech.glide.Glide;
 import com.example.bus_reservation.Constant;
 import com.example.bus_reservation.Model.bookings_model;
 import com.example.bus_reservation.R;
@@ -29,7 +31,7 @@ public class view_booking extends AppCompatActivity {
 TextView back,Name,special;
 ImageView imageView;
 TextInputEditText service,service_type,date,address,hour,hour_price,t_price;
-
+String image_name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,11 +64,21 @@ TextInputEditText service,service_type,date,address,hour,hour_price,t_price;
         hour.setEnabled(false);
         t_price.setEnabled(false);
 
+
         String booking_id = getIntent().getStringExtra("booking_id");
 
         getData(booking_id);
 
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                Intent intent = new Intent(view_booking.this,Show_image.class);
+                intent.putExtra("image",image_name);
+                startActivity(intent);
+
+            }
+        });
     }
 
     private void getData(String booking_id) {
@@ -84,9 +96,10 @@ TextInputEditText service,service_type,date,address,hour,hour_price,t_price;
                         for (int i = 0; i < jsonArray.length(); i++) {
                             JSONObject object = jsonArray.getJSONObject(i);
 
-//                            Picasso.with(view_booking.this)
-//                                    .load(Constant.Image_url.concat("uploads/").concat(object.getString("id_image")))
-//                                    .into(imageView);
+                            image_name =  Constant.booking_image_url.concat(object.getString("id_image"));
+                            Picasso.with(view_booking.this)
+                                    .load(image_name)
+                                    .into(imageView);
 
                             Name.setText(object.getString("client_name"));
                             special.setText(object.getString("special_request"));
