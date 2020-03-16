@@ -20,7 +20,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup,android:icon">
-        <activity android:name=".Activity.view_service"></activity>
+        <activity android:name=".Activity.chat_screen"></activity>
+        <activity android:name=".Activity.view_service" />
         <activity android:name=".Activity.view_booking" />
         <activity android:name=".Activity.add_sprovid" />
         <activity android:name=".Activity.last_step" />

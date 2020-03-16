@@ -6,6 +6,12 @@ public class Constant {
 
     public static final String Base_url="http://marketist.eparking.website/Freelancer/Api.php";
 
+    public static final String chat_image_url = "http://marketist.eparking.website/uploads/chat/";
+
+    public static final String Base_url_get_chat=Base_url+"?get_chat=true&provider_id=";
+
+    public static final String Base_url_get_conversation=Base_url+"?get_conversation=true";
+
     public static final String Base_url_booking_accept=Base_url+"?accept_booking=true&booking_id=";
 
     public static final String Base_url_booking_delete=Base_url+"?cancel_booking=true&booking_id=";

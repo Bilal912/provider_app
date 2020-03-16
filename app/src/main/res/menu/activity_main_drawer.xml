@@ -39,6 +39,11 @@
             android:title="Edit Profile"
             />
 
+        <item android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_message_black_24dp"
+            android:title="Chats"
+            />
+
         <item android:title="Others"
         >
         <menu>

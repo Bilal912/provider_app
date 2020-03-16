@@ -24,6 +24,7 @@ import com.example.bus_reservation.Dashboard;
 import com.example.bus_reservation.R;
 import com.example.bus_reservation.Update;
 import com.example.bus_reservation.bookings;
+import com.example.bus_reservation.chat_fragment;
 import com.example.bus_reservation.member_ship;
 import com.example.bus_reservation.private_gallery;
 import com.example.bus_reservation.public_gallery;
@@ -136,6 +137,15 @@ public class Menu extends AppCompatActivity {
                         FragmentTransaction transaction7 = getSupportFragmentManager().beginTransaction();
                         transaction7.replace(R.id.nav_fragment, newFragment7);
                         transaction7.commit();
+                        drawer.closeDrawer(GravityCompat.START);
+                        break;
+
+                    case R.id.nav_chat:
+                        toptext.setText("Chats");
+                        Fragment newFragment9 = new chat_fragment();
+                        FragmentTransaction transaction9 = getSupportFragmentManager().beginTransaction();
+                        transaction9.replace(R.id.nav_fragment, newFragment9);
+                        transaction9.commit();
                         drawer.closeDrawer(GravityCompat.START);
                         break;
 
