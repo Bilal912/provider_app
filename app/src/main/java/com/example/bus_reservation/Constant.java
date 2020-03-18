@@ -8,6 +8,8 @@ public class Constant {
 
     public static final String chat_image_url = "http://marketist.eparking.website/uploads/chat/";
 
+    public static final String Base_url_get_dashboard = "http://marketist.eparking.website/Client/Api.php?providor_dashboard=1&providor_id=";
+
     public static final String Base_url_get_chat=Base_url+"?get_chat=true&provider_id=";
 
     public static final String Base_url_get_conversation=Base_url+"?get_conversation=true";

@@ -26,128 +26,252 @@
             android:gravity="start"
             />
 
-        <androidx.cardview.widget.CardView
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="40dp"
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="80dp"-->
+<!--            app:cardElevation="20dp"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            >-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:background="@drawable/dash_border"-->
+<!--            >-->
+<!--            <TextView-->
+<!--                android:id="@+id/booked_seat"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="20"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:text="0"-->
+<!--                android:fontFamily="@font/gotham"-->
+<!--                android:textColor="#000000"-->
+<!--                android:background="@color/white"-->
+<!--                android:textSize="24sp"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="80"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/gotham"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:background="@color/colorPrimary"-->
+<!--                android:text="Total Payment Received"-->
+<!--                android:textSize="18sp"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="80dp"-->
+<!--            app:cardElevation="20dp"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            >-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:background="@drawable/dash_border"-->
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:layout_weight="80"-->
+<!--                    android:fontFamily="@font/gotham"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Total Payment Paid"-->
+<!--                    android:textSize="18sp"-->
+<!--                    />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/bookoo"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="20"-->
+<!--                    android:fontFamily="@font/gotham"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="0"-->
+<!--                    android:textColor="#ffffff"-->
+<!--                    android:background="@color/colorPrimary"-->
+<!--                    android:textSize="24sp"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+        <TextView
+            android:id="@+id/title"
+            android:padding="10dp"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            app:cardElevation="20dp"
-            app:cardCornerRadius="10dp"
-            >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:background="@drawable/dash_border"
-            >
-            <TextView
-                android:id="@+id/booked_seat"
-                android:layout_gravity="center"
-                android:layout_width="0dp"
-                android:layout_weight="20"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="0"
-                android:fontFamily="@font/gotham"
-                android:textColor="#ffffff"
-                android:background="@color/colorPrimary"
-                android:textSize="24sp"
-                />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_weight="80"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:fontFamily="@font/gotham"
-                android:layout_gravity="center"
-                android:textColor="#000000"
-                android:text="Total Booked Seats"
-                android:textSize="18sp"
-                />
-        </LinearLayout>
-        </androidx.cardview.widget.CardView>
+            android:background="@color/colorPrimary"
+            android:gravity="start"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham"
+            android:textColor="@color/white"
+            android:text="Total Payment"
+            android:textSize="16sp"
+            />
 
         <androidx.cardview.widget.CardView
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            app:cardElevation="20dp"
-            app:cardCornerRadius="10dp"
-            >
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="20dp" >
+
             <LinearLayout
+                android:baselineAligned="false"
+                android:background="@drawable/book_border"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:background="@drawable/dash_border"
                 >
-                <TextView
-                    android:layout_width="0dp"
-                    android:textColor="#000000"
-                    android:layout_weight="80"
-                    android:fontFamily="@font/gotham"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="Total Bookings"
-                    android:textSize="18sp"
-                    />
-                <TextView
-                    android:id="@+id/bookoo"
-                    android:layout_width="0dp"
-                    android:layout_weight="20"
-                    android:fontFamily="@font/gotham"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="0"
-                    android:textColor="#ffffff"
-                    android:background="@color/colorPrimary"
-                    android:textSize="24sp"
-                    />
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="15dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="45"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gotham"
+                            android:text="Paid"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:textSize="14sp"
+                            />
+                        <TextView
+                            android:id="@+id/paid"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:textColor="@color/black"
+                            android:text="0"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:textSize="30sp"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        android:layout_marginBottom="2dp"
+                        />
+                    <LinearLayout
+                        android:layout_marginBottom="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="45"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gotham"
+                            android:text="Recieve"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:textSize="14sp"
+                            />
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/recieve"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:textColor="@color/black"
+                            android:text="0"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:textSize="30sp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
 
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
+        </androidx.cardview.widget.CardView>
+        <View
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            app:cardElevation="20dp"
-            app:cardCornerRadius="10dp"
-            >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:background="@drawable/dash_border"
-                >
-                <TextView
-                    android:id="@+id/refund_id"
-                    android:fontFamily="@font/gotham"
-                    android:layout_width="0dp"
-                    android:layout_weight="20"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="0"
-                    android:textColor="#ffffff"
-                    android:background="@color/colorPrimary"
-                    android:textSize="24sp"
-                    />
-                <TextView
-                    android:fontFamily="@font/gotham"
-                    android:layout_width="0dp"
-                    android:layout_weight="80"
-                    android:textColor="#000000"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="Total Refund"
-                    android:textSize="18sp"
-                    />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            />
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="80dp"-->
+<!--            app:cardElevation="20dp"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            >-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:background="@drawable/dash_border"-->
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:id="@+id/refund_id"-->
+<!--                    android:fontFamily="@font/gotham"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="20"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="0"-->
+<!--                    android:textColor="#ffffff"-->
+<!--                    android:background="@color/colorPrimary"-->
+<!--                    android:textSize="24sp"-->
+<!--                    />-->
+<!--                <TextView-->
+<!--                    android:fontFamily="@font/gotham"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="80"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Your Membership"-->
+<!--                    android:textSize="18sp"-->
+<!--                    />-->
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
 
 
     </LinearLayout>

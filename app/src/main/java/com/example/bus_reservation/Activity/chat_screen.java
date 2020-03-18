@@ -74,7 +74,7 @@ chat_adapter adapter;
     int totallength =0;
     Handler handler = new Handler();
     Runnable runnable;
-    int delay = 1500;
+    int delay = 1000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -230,7 +230,7 @@ chat_adapter adapter;
                     }
                     else {
                         loading.dismiss();
-                        Toast.makeText(chat_screen.this,"No Data Found", Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(chat_screen.this,"No Data Found", Toast.LENGTH_SHORT).show();
                     }
                 }
                 catch (Exception e){

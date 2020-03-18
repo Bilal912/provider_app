@@ -6,7 +6,7 @@ android {
     defaultConfig {
 
         vectorDrawables.useSupportLibrary = true
-        applicationId "com.example.bus_reservation"
+        applicationId "com.lizzielap.provider"
         minSdkVersion 17
         targetSdkVersion 29
         versionCode 1
